@@ -30,6 +30,8 @@ public class Main {
                 min = j;
             }
         }
+        System.out.println("Минимальный элемент массива: " + min);
+        System.out.println("Максимальный элемент массива: " + max);
         if (Math.abs(min) < Math.abs(max)){
             System.out.println("Максимальное по модулю из массива: " + max);
         }
