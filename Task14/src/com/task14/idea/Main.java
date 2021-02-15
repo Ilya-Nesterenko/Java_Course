@@ -7,13 +7,10 @@ public class Main {
     public static void main (String [] args){
         Random rand = new Random();
         int[] arr = new int[15];
-        int i = 0;
-        while (i < arr.length){
-            int buf = rand.nextInt();
-            if (buf > -20 && buf < 20){
-                arr[i] = buf;
-                i++;
-            }
+        int rigt = 20;
+        int left = -20;
+        for (int i=0; i< arr.length; i++){
+            arr[i] = (int) (Math.random() * (rigt - left)) + left;
         }
         System.out.println("Сгенерированный мвссив");
         for (int j : arr){
